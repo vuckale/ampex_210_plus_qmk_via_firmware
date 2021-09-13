@@ -2,7 +2,6 @@
 
 #include "config_common.h"
 
-// USB Device descriptor parameter
 #define VENDOR_ID       0x0210
 #define PRODUCT_ID      0x002B
 #define DEVICE_VER      0x0001
@@ -10,7 +9,6 @@
 #define PRODUCT         210 Plus
 #define DESCRIPTION     Terminal Keyboard
 
-// Add teensy core
 #define CORE_TEENSY
 
 /* key matrix size */
