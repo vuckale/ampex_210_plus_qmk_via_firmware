@@ -4,14 +4,17 @@
 <!--![ampex-210-plus-qmk](https://github.com/vuckale/)-->
 
 <!--*A short description of the keyboard/project*-->
-<b> Ampex 210 plus </b> is a terminal keyboard, manufactured for [Ampex](https://en.wikipedia.org/wiki/Ampex) by [Hi-Tek](https://deskthority.net/wiki/Hi-Tek_Corporation). It uses [Hi-Tek Series 725](https://deskthority.net/wiki/Hi-Tek_Series_725) AKA <b> sapce invader</b> switches. This particular models uses tow eyed, linear switches.
+<b> Ampex 210 plus </b> is a terminal keyboard, manufactured for [Ampex](https://en.wikipedia.org/wiki/Ampex) by [Hi-Tek](https://deskthority.net/wiki/Hi-Tek_Corporation). It uses [Hi-Tek Series 725](https://deskthority.net/wiki/Hi-Tek_Series_725) AKA <b> space invader</b> switches. This particular models uses tow eyed, linear switches.
 
 I removed original MCU (40 pin 8-bit Mitsubishi M5L8048-186P) and replaced it with Teensy++ 2.0 (AT90USB1286). With some rewiring Teensy++ 2.0 was almost pin to pin compatible with existing pads. Flashing QMK firmware onto Teensy makes this keyboard programmable and replaces existing 4-pin RJ connector with USB mini. 
 
 # Matrix Wiring
 ![matrix-wiring](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/wiring.png?raw=true)
+
 &ast; Pins <b>D5</b> and <b>D6</b> were causing some delay in input when using this keyboard over USB 3.0. As marked above, those two pins had to be jumped to pins <b>F6</b> and <b>F7</b>. Every other pin is as marked, and Teensy only has to be shifted one pin to left in the exact orientation as pictured.
+
 &ast; This wiring does not include two <b> shift </b> keys. Due to design (or some other reason), this keyboard had both shift keys act as single key. In this firmware I rewired those two keys into separate rows and columns to act as two separate keys. 
+
 ![right-left-shift-wiring](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/left-right-shift-wiring.png?raw=true)
 Additionaly, 4 wire connectors had to be cut to reduce interfierence and delay in input as shown in the picture bellow. 2 of them, right next to right shift, 1 in the middle and one above of left shift.
 ![pcb-back-wiring](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/pcb-back-shift-wiring.png?raw=true)
@@ -19,7 +22,6 @@ Additionaly, 4 wire connectors had to be cut to reduce interfierence and delay i
 # Speaker Wiring
 This PCB has a marking <b>SP1</b> for speaker.
 ![speaker-wiring](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/speaker-wiring.png?raw=true)
-![speaker](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/speaker.png?raw=true)
 
 <!--* Keyboard Maintainer: [vuckale](https://github.com/yourusername)
 * Hardware Supported: Teensy++ 2.0 USB based microcontroller
