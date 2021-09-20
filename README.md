@@ -55,6 +55,9 @@ I removed original MCU (40 pin 8-bit Mitsubishi M5L8048-186P) and replaced it wi
 &ast; Logo
 ![closeup](https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/docs/closeup.png?raw=true)
 
+&ast; [Operation Manual](https://archive.org/details/bitsavers_ampextermiperatingManualApr84_11028631/mode/2up)
+![closeup](https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/docs/handbook-overview-terminal.png?raw=true)
+
 <!--* Keyboard Maintainer: [vuckale](https://github.com/yourusername)
 * Hardware Supported: Teensy++ 2.0 USB based microcontroller
 * Hardware Availability: *Links to where you can find this hardware*-->
