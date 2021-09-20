@@ -16,11 +16,11 @@
 #define MATRIX_COLS 16
 
 #define MATRIX_ROW_PINS \
-    { E6, E7, B0, B1, B2, B3, B4, B5, C7, F0, F2}
+    { E6, E7, B0, B1, B2, B3, B4, B5, F4, F0, F2}
 #define MATRIX_COL_PINS \
     { B7, D0, D1, D2, F6, F7, D7, E0, E1, C0, C3, C4, C5, C6, F1, F3}
 #define UNUSED_PINS \
-    { D3, D5, D6, C1, C2, A0, A1, A2, A3, A4, A5, A6, A7, E4, E5, F4, F5}
+    { D3, D5, D6, C1, C2, C7, A0, A1, A2, A3, A4, A5, A6, A7, E4, E5, F5}
 
 #define DIODE_DIRECTION COL2ROW
 
