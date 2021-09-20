@@ -8,19 +8,22 @@
 
 I removed original MCU (40 pin 8-bit Mitsubishi M5L8048-186P) and replaced it with Teensy++ 2.0 (AT90USB1286). With some rewiring Teensy++ 2.0 was almost pin to pin compatible with existing pads. Flashing QMK firmware onto Teensy makes this keyboard programmable and replaces existing 4-pin RJ connector with USB mini. 
 
-# Matrix Wiring
+# Wiring
 &ast; Pins <b>D5</b> and <b>D6</b> were causing some permanent shorting when using this keyboard over USB 3.0. As marked bellow, those two pins had to be jumped to pins <b>F6</b> and <b>F7</b>. Every other pin is as marked, and Teensy only has to be shifted one pin to left in the exact orientation as pictured. Pins on PCB marked with red are unused.
 ![matrix-wiring](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/wiring.png?raw=true)
 
-&ast; The pinout above does not include two <b> shift </b> keys. Due to design (or some other reason), this keyboard had both shift keys act as single key. In this firmware I rewired those two keys into separate rows and columns to act as two separate keys. 
-![right-left-shift-wiring](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/left-right-shift-wiring.png?raw=true)
+&ast; The pinout above does not include two <b> shift </b> and <b> ctrl </b> keys. Due to design (or some other reason), this keyboard had both shift keys act as single key. Ctrl key was routed through some other components that I didn't want to desolder. In this firmware I rewired those keys into separate rows and columns only because that was the easiest and cleanest way to reach controller pins i.e. you can rewire it to some other free row-column combinations. 
+![right-left-shift-wiring](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/custom-wiring.png?raw=true)
 
-&ast; Additionaly, 4 trace connectors coming from 2 shift keys have to be cut. Not doing so will cause some delay in input. There is 4 in total and beginning and end is marked with red in the picture bellow.
-![pcb-back-wiring](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/pcb-back-shift-wiring.png?raw=true)
+&ast; Additionaly, 6 trace connectors coming from 2 shift keys and ctrl key have to be cut. Not doing so will cause some delay in input. The trace connectors that have to be removed are marked on the picture bellow.
+![pcb-back-wiring](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/pcb-back-custom-wiring.png?raw=true)
 
 &ast; I have soldered only the pins that I am using in this firmware. To achieve this I have cut pins that are not used. Soldering all the pins might produce a short or some other type of interference. 
 ![pins](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/pins.png?raw=true)
 
+# Key Matrix
+&ast; Rows and colums colored in green are extra rows and columns I mentioned in Wiring section.
+![key-matrix](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/matrix.png?raw=true)
 # Speaker Wiring
 &ast; This PCB has a marking <b>SP1</b> for speaker. Two pins comming out on the back of the PCB have to be jumped to pins marked bellow.
 <p align="center">
