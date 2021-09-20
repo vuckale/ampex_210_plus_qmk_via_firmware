@@ -1,7 +1,7 @@
 
 # <b> Ampex 210 plus </b> - An 80s keyboard gets QMK and VIA support 
 
-<!--![ampex-210-plus-qmk](https://github.com/vuckale/)-->
+![ampex-210-plus-qmk-via-firmware](https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/overview.png?raw=true)
 
 <!--*A short description of the keyboard/project*-->
 <b> Ampex 210 plus </b> is a terminal keyboard, manufactured for [Ampex](https://en.wikipedia.org/wiki/Ampex) by [Hi-Tek](https://deskthority.net/wiki/Hi-Tek_Corporation). It uses [Hi-Tek Series 725](https://deskthority.net/wiki/Hi-Tek_Series_725) AKA <b> space invader</b> switches. This particular models uses tow eyed, linear switches.
@@ -10,24 +10,24 @@ I removed original MCU (40 pin 8-bit Mitsubishi M5L8048-186P) and replaced it wi
 
 # Wiring
 &ast; Pins <b>D5</b> and <b>D6</b> were causing some permanent shorting when using this keyboard over USB 3.0. As marked bellow, those two pins had to be jumped to pins <b>F6</b> and <b>F7</b>. Every other pin is as marked, and Teensy only has to be shifted one pin to left in the exact orientation as pictured. Pins on PCB marked with red are unused.
-![matrix-wiring](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/wiring.png?raw=true)
+![matrix-wiring](https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/docs/wiring.png?raw=true)
 
 &ast; The pinout above does not include two <b> shift </b> and <b> ctrl </b> keys. Due to design (or some other reason), this keyboard had both shift keys act as single key. Ctrl key was routed through some other components that I didn't want to desolder. In this firmware I rewired those keys into separate rows and columns only because that was the easiest and cleanest way to reach controller pins i.e. you can rewire it to some other free row-column combinations. 
-![right-left-shift-wiring](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/custom-wiring.png?raw=true)
+![right-left-shift-wiring](https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/docs/custom-wiring.png?raw=true)
 
 &ast; Additionaly, 6 trace connectors coming from 2 shift keys and ctrl key have to be cut. Not doing so will cause some delay in input. The trace connectors that have to be removed are marked on the picture bellow.
-![pcb-back-wiring](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/pcb-back-custom-wiring.png?raw=true)
+![pcb-back-wiring](https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/docs/pcb-back-custom-wiring.png?raw=true)
 
 &ast; I have soldered only the pins that I am using in this firmware. To achieve this I have cut pins that are not used. Soldering all the pins might produce a short or some other type of interference. 
-![pins](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/pins.png?raw=true)
+![pins](https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/docs/pins.png?raw=true)
 
 # Key Matrix
 &ast; Rows and colums colored in green are extra rows and columns I mentioned in Wiring section.
-![key-matrix](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/matrix.png?raw=true)
+![key-matrix](https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/docs/matrix.png?raw=true)
 # Speaker Wiring
 &ast; This PCB has a marking <b>SP1</b> for speaker. Two pins comming out on the back of the PCB have to be jumped to pins marked bellow.
 <p align="center">
-  <img src="https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/speaker-wiring.png?raw=true" />
+  <img src="https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/docs/speaker-wiring.png?raw=true" />
 </p>
 <!--* Keyboard Maintainer: [vuckale](https://github.com/yourusername)
 * Hardware Supported: Teensy++ 2.0 USB based microcontroller
