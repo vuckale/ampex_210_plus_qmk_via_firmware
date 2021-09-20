@@ -6,7 +6,19 @@
 <!--*A short description of the keyboard/project*-->
 <b> Ampex 210 plus </b> is a terminal keyboard, manufactured for [Ampex](https://en.wikipedia.org/wiki/Ampex) by [Hi-Tek](https://deskthority.net/wiki/Hi-Tek_Corporation). It uses [Hi-Tek Series 725](https://deskthority.net/wiki/Hi-Tek_Series_725) AKA <b> space invader</b> switches. This particular models uses tow eyed, linear switches.
 
-I removed original MCU (40 pin 8-bit Mitsubishi M5L8048-186P) and replaced it with Teensy++ 2.0 (AT90USB1286). With some rewiring Teensy++ 2.0 was almost pin to pin compatible with existing pads. Flashing QMK firmware onto Teensy makes this keyboard programmable and replaces existing 4-pin RJ connector with USB mini. 
+I removed original MCU (40 pin 8-bit Mitsubishi M5L8048-186P) and replaced it with Teensy++ 2.0 (AT90USB1286). With some rewiring Teensy++ 2.0 was almost pin to pin compatible with existing pads. Flashing QMK firmware onto Teensy makes this keyboard programmable and replaces existing 4-pin RJ connector with USB mini.
+
+# Features
+
+* USB mini B
+* 4 programmable layers
+* 16 macro keys
+* bootmagic on esc key
+* speaker
+* VIA
+
+Every other pin is as marked, and Teensy only has to be shifted one pin to left in the exact orientation as pictured. Pins on PCB marked with red are unused.
+![VIA](https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/docs/VIA.png?raw=true)
 
 # Wiring
 &ast; Pins <b>D5</b> and <b>D6</b> were causing some permanent shorting when using this keyboard over USB 3.0. As marked bellow, those two pins had to be jumped to pins <b>F6</b> and <b>F7</b>. Every other pin is as marked, and Teensy only has to be shifted one pin to left in the exact orientation as pictured. Pins on PCB marked with red are unused.
@@ -29,6 +41,21 @@ I removed original MCU (40 pin 8-bit Mitsubishi M5L8048-186P) and replaced it wi
 <p align="center">
   <img src="https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/docs/speaker-wiring.png?raw=true" />
 </p>
+
+# 3D-Print ready stabilizers
+&ast; If you happen to break stabilizers you can get the files to 3D-print them [here](https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/stabilizers_stl/) 
+![stabilizers](https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/stabilizers_stl/ampex_210_plus_stabilizer_stl.gif?raw=true)
+
+# More pictures
+&ast; Flat
+![flat](https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/docs/flat.png?raw=true)
+
+&ast; 11° angle
+![11](https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/docs/11.png?raw=true)
+
+&ast; Logo
+![closeup](https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/docs/closeup.png?raw=true)
+
 <!--* Keyboard Maintainer: [vuckale](https://github.com/yourusername)
 * Hardware Supported: Teensy++ 2.0 USB based microcontroller
 * Hardware Availability: *Links to where you can find this hardware*-->
