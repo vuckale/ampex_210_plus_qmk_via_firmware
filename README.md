@@ -17,7 +17,6 @@ I removed original MCU (40 pin 8-bit Mitsubishi M5L8048-186P) and replaced it wi
 * speaker
 * VIA
 
-Every other pin is as marked, and Teensy only has to be shifted one pin to left in the exact orientation as pictured. Pins on PCB marked with red are unused.
 ![VIA](https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/docs/VIA.png?raw=true)
 
 # Wiring
