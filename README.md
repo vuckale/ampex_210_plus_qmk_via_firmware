@@ -9,13 +9,12 @@
 I removed original MCU (40 pin 8-bit Mitsubishi M5L8048-186P) and replaced it with Teensy++ 2.0 (AT90USB1286). With some rewiring Teensy++ 2.0 was almost pin to pin compatible with existing pads. Flashing QMK firmware onto Teensy makes this keyboard programmable and replaces existing 4-pin RJ connector with USB mini. 
 
 # Matrix Wiring
+&ast; Pins <b>D5</b> and <b>D6</b> were causing some permanent shorting when using this keyboard over USB 3.0. As marked bellow, those two pins had to be jumped to pins <b>F6</b> and <b>F7</b>. Every other pin is as marked, and Teensy only has to be shifted one pin to left in the exact orientation as pictured. Pins on PCB marked with red are unused.
 ![matrix-wiring](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/wiring.png?raw=true)
 
-&ast; Pins <b>D5</b> and <b>D6</b> were causing some permanent shorting when using this keyboard over USB 3.0. As marked above, those two pins had to be jumped to pins <b>F6</b> and <b>F7</b>. Every other pin is as marked, and Teensy only has to be shifted one pin to left in the exact orientation as pictured.
-
 &ast; The pinout above does not include two <b> shift </b> keys. Due to design (or some other reason), this keyboard had both shift keys act as single key. In this firmware I rewired those two keys into separate rows and columns to act as two separate keys. 
-
 ![right-left-shift-wiring](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/left-right-shift-wiring.png?raw=true)
+
 &ast; Additionaly, 4 trace connectors coming from 2 shift keys have to be cut. Not doing so will cause some delay in input. There is 4 in total and beginning and end is marked with red in the picture bellow.
 ![pcb-back-wiring](https://github.com/vuckale/ampex-210-plus-qmk/blob/main/docs/pcb-back-shift-wiring.png?raw=true)
 
