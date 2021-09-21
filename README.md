@@ -1,5 +1,5 @@
 
-# <b> Ampex 210 plus </b> - An 80s keyboard gets QMK and VIA support 
+# <b> Ampex 210 plus </b> - 80s keyboard gets QMK and VIA support 
 
 ![ampex-210-plus-qmk-via-firmware](https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/overview.png?raw=true)
 
