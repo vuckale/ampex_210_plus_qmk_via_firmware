@@ -26,7 +26,7 @@ I removed original MCU (40 pin 8-bit Mitsubishi M5L8048-186P) and replaced it wi
 &ast; The pinout above does not include two <b> shift </b> and <b> ctrl </b> keys. Due to design (or some other reason), this keyboard had both shift keys act as single key. Ctrl key was routed through some other components that I didn't want to desolder. In this firmware I rewired those keys into separate rows and columns only because that was the easiest and cleanest way to reach controller pins i.e. you can rewire it to some other free row-column combinations. 
 ![right-left-shift-wiring](https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/docs/custom-wiring.png?raw=true)
 
-&ast; Additionaly, 6 trace connectors coming from 2 shift keys and ctrl key have to be cut. Not doing so will cause some delay in input. The trace connectors that have to be removed are marked on the picture bellow.
+&ast; 6 trace connectors coming from 2 shift keys and ctrl key have to be cut. Not doing so will cause some delay in input. The trace connectors that have to be cut are marked on the picture bellow with small red circles.
 ![pcb-back-wiring](https://github.com/vuckale/ampex-210-plus-qmk-via-firmware/blob/main/docs/pcb-back-custom-wiring.png?raw=true)
 
 &ast; I have soldered only the pins that I am using in this firmware. To achieve this I have cut pins that are not used. Soldering all the pins might produce a short or some other type of interference. 
